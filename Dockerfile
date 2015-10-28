@@ -4,7 +4,7 @@ MAINTAINER Markus Mayer <awesome@wundercart.de>
 #          Panagiotis Moustafellos <pmoust@peopleperhour.com>
 
 ENV VERSION 2.2.1
-ENV ETCD_ENDPOINT 172.17.42.1:2379
+ENV ETCDCTL_ENDPOINT 172.17.42.1:2379
 
 RUN apk-install curl && \
     curl -LOks https://github.com/coreos/etcd/releases/download/v${VERSION}/etcd-v${VERSION}-linux-amd64.tar.gz && \
